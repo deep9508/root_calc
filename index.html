@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Root Calculator <p><h4>Deepak Kumar</h4> </p> </h1>
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" placeholder="Enter a number" oninput="calculateRoot()">
+        
+        <label for="rootType">Select root type:</label>
+        <select id="rootType" onchange="calculateRoot()">
+            <option value="square">Square Root</option>
+            <option value="cube">Cube Root</option>
+        </select>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
